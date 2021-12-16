@@ -3,6 +3,6 @@ class ResultSearch{
   final String content;
   final String img;
 
-  ResultSearch({required this.title, required this.content, required this.img});
+  ResultSearch({this.title = "", this.content = "", this.img = ""});
 
 }
