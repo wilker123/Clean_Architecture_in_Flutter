@@ -16,7 +16,7 @@ void main(){
 
   test("Deve retornar uma lista de ResultSearch", () async {
 
-    when(repository.search("")).thenAnswer((_) async => const Right(<ResultSearch>[]));
+    when(repository.search(any)).thenAnswer((_) async =>  Right(<ResultSearch>[]));
 
     final result = await usecase("jacob");
 
